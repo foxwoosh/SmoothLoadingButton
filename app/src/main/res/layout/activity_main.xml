@@ -14,6 +14,6 @@
         app:normalBackground="@drawable/shape_rounded_white_stroke_orange"
         app:finishedBackground="@drawable/shape_rounded_orange"
         app:textColor="@color/foxy"
-        app:finishedVectorIcon="@drawable/ic_vector_finished"/>
+        app:finishedIcon="@drawable/ic_vector_finished"/>
 
 </FrameLayout>
