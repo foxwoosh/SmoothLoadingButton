@@ -6,7 +6,7 @@ With this library you can easily create and animate button within 3 states - nor
 ![Example](http://puu.sh/zopOI/ba5d59bf1c.gif)
 
 # Basic Usage
-1. Initiate your button in XML
+1. Initialize your button in XML
 
 ```xml
 <com.foxysoft.smoothloadingbutton.main.LoadingButton
@@ -30,7 +30,7 @@ With this library you can easily create and animate button within 3 states - nor
 - `app:finishedIcon="@drawable/ic_vector_finished"` - Drawable resourse for Finished button state, vector or not - doesn't matter.
 - ProgressBar color depends on your `colorAccent`.
 
-2. Initiate your button in Activity/Fragment/RV ViewHolder etc.
+2. Initialize your button in Activity/Fragment/RV ViewHolder etc.
 
 ```java
 private LoadingButton mBtnDoSomething;
