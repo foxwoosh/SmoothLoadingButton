@@ -3,6 +3,8 @@
 
 With this library you can easily create and animate button within 3 states - normal, loading and finished. Nothing but Google Support Library inside.
 
+![example](http://puu.sh/zopOI/ba5d59bf1c.gif)
+
 # Basic Usage
 1. Initiate your button in XML
 
