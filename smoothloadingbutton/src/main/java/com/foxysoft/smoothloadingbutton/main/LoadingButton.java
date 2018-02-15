@@ -73,7 +73,7 @@ public class LoadingButton extends FrameLayout {
             mTextColor = a.getColor(R.styleable.LoadingButton_textColor, mDefaultTextColor);
             mNormalBackground = a.getDrawable(R.styleable.LoadingButton_normalBackground);
             mFinishedBackground = a.getDrawable(R.styleable.LoadingButton_finishedBackground);
-            mFinishedIcon = a.getDrawable(R.styleable.LoadingButton_finishedVectorIcon);
+            mFinishedIcon = a.getDrawable(R.styleable.LoadingButton_finishedIcon);
         } finally {
             a.recycle();
         }

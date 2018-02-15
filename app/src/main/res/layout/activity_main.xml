@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:text="@string/do_something"
-        app:textSizeSP="14"
+        app:textSizeSP="20"
         app:normalBackground="@drawable/shape_rounded_white_stroke_orange"
         app:finishedBackground="@drawable/shape_rounded_orange"
         app:textColor="@color/foxy"

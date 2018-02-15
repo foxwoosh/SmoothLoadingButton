@@ -6,6 +6,6 @@
         <attr name="textColor" format="reference"/>
         <attr name="normalBackground" format="reference"/>
         <attr name="finishedBackground" format="reference"/>
-        <attr name="finishedVectorIcon" format="reference"/>
+        <attr name="finishedIcon" format="reference"/>
     </declare-styleable>
 </resources>
