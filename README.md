@@ -48,7 +48,9 @@ private LoadingButton mBtnDoSomething;
 
 Use:
 - **changeState(LoadingButtonState state)** to change it's state with animation
+
 or
+
 - **setState(LoadingButtonState state)** to change state immediately without animation (if you want to init button in Finished state e.g.)
 
 Have fun! :)
