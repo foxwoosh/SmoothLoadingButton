@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.foxysoft.smoothloadingbutton.main.LoadingButton
+        android:id="@+id/btn_test"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="@string/do_something"
+        app:textSizeSP="14"
+        app:normalBackground="@drawable/shape_rounded_white_stroke_orange"
+        app:finishedBackground="@drawable/shape_rounded_orange"
+        app:textColor="@color/foxy"
+        app:finishedVectorIcon="@drawable/ic_vector_finished"/>
+
+</FrameLayout>

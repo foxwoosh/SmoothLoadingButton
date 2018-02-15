@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="text" format="reference"/>
+        <attr name="textSizeSP" format="integer" />
+        <attr name="textColor" format="reference"/>
+        <attr name="normalBackground" format="reference"/>
+        <attr name="finishedBackground" format="reference"/>
+        <attr name="finishedVectorIcon" format="reference"/>
+    </declare-styleable>
+</resources>
