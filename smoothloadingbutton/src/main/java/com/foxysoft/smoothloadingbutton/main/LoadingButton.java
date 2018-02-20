@@ -103,6 +103,19 @@ public class LoadingButton extends FrameLayout {
         if (state == LoadingButtonState.NORMAL) {
             switch (mCurrentState) {
                 case NORMAL:
+                    if (!animate) {
+                        for (View view : views) {
+                            if (view instanceof ProgressBar) {
+                                view.setVisibility(INVISIBLE);
+                            }
+                            if (view instanceof ImageView) {
+                                view.setVisibility(INVISIBLE);
+                            }
+                            if (view instanceof TextView) {
+                                view.setVisibility(VISIBLE);
+                            }
+                        }
+                    }
                     break;
                 case LOADING:
                     for (View view : views) {
@@ -145,6 +158,19 @@ public class LoadingButton extends FrameLayout {
                     }
                     break;
                 case LOADING:
+                    if (!animate) {
+                        for (View view : views) {
+                            if (view instanceof ProgressBar) {
+                                view.setVisibility(VISIBLE);
+                            }
+                            if (view instanceof ImageView) {
+                                view.setVisibility(INVISIBLE);
+                            }
+                            if (view instanceof TextView) {
+                                view.setVisibility(GONE);
+                            }
+                        }
+                    }
                     break;
                 case FINISHED:
                     for (View view : views) {
@@ -186,6 +212,19 @@ public class LoadingButton extends FrameLayout {
                     }
                     break;
                 case FINISHED:
+                    if (!animate) {
+                        for (View view : views) {
+                            if (view instanceof ProgressBar) {
+                                view.setVisibility(INVISIBLE);
+                            }
+                            if (view instanceof ImageView) {
+                                view.setVisibility(VISIBLE);
+                            }
+                            if (view instanceof TextView) {
+                                view.setVisibility(GONE);
+                            }
+                        }
+                    }
                     break;
             }
 
@@ -248,9 +287,9 @@ public class LoadingButton extends FrameLayout {
             mIVImage.setImageDrawable(mFinishedIcon);
         }
 
-        mIVImage.setVisibility(GONE);
+        mIVImage.setVisibility(INVISIBLE);
 
-        mProgressBar.setVisibility(GONE);
+        mProgressBar.setVisibility(INVISIBLE);
 
         mTVText.setTextSize(mTextSize);
         tvParams.topMargin = dpToPx(5);
