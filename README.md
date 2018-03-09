@@ -9,7 +9,7 @@ With this library you can easily create and animate button within 3 states - nor
 1. Initialize your button in XML
 
 ```xml
-<com.foxysoft.smoothloadingbutton.main.LoadingButton
+<com.foxysoft.smoothloadingbutton.LoadingButton
         android:id="@+id/btn_test"
         android:layout_gravity="center"
         android:layout_width="wrap_content"

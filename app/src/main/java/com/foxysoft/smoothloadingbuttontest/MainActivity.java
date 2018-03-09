@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.foxysoft.smoothloadingbutton.main.LoadingButton;
-import com.foxysoft.smoothloadingbutton.main.LoadingButton.LoadingButtonState;
+import com.foxysoft.smoothloadingbutton.LoadingButton;
+import com.foxysoft.smoothloadingbutton.LoadingButton.LoadingButtonState;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

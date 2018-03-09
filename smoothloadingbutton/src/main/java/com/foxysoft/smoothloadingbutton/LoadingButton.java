@@ -1,4 +1,4 @@
-package com.foxysoft.smoothloadingbutton.main;
+package com.foxysoft.smoothloadingbutton;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -298,22 +298,12 @@ public class LoadingButton extends FrameLayout {
         tvParams.bottomMargin = dpToPx(5);
         mTVText.setLayoutParams(tvParams);
 
-        mTVText.getViewTreeObserver().addOnGlobalLayoutListener(
-                new ViewTreeObserver.OnGlobalLayoutListener(){
+        mTVText.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
 
-                    @Override
-                    public void onGlobalLayout() {
-                        FrameLayout.LayoutParams ivAndPbParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER);
-                        ivAndPbParams.height = mTVText.getHeight();
-                        ivAndPbParams.width = mTVText.getHeight();
-                        ivAndPbParams.setMargins(dpToPx(5), dpToPx(5), dpToPx(5), dpToPx(5));
-
-                        mIVImage.setLayoutParams(ivAndPbParams);
-                        mProgressBar.setLayoutParams(ivAndPbParams);
-
-                        mTVText.getViewTreeObserver().removeOnGlobalLayoutListener( this );
-                    }
-                });
+        FrameLayout.LayoutParams ivAndPbParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER);
+        ivAndPbParams.height = mTVText.getMeasuredHeight();
+        ivAndPbParams.width = mTVText.getMeasuredHeight();
+        ivAndPbParams.setMargins(dpToPx(5), dpToPx(5), dpToPx(5), dpToPx(5));
 
         if (mNormalBackground == null) {
             this.setBackgroundColor(mDefaultNormalBackground);
